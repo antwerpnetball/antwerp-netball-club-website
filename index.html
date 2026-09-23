@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Antwerp Netball Club — a welcoming, social and empowering netball community in Antwerp.">
+  <title>Antwerp Netball Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Antwerp Netball Club home">
+      <span class="brand-main">ANTWERP</span>
+      <span class="brand-sub">NETBALL CLUB</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#training">Training</a>
+      <a href="#join">Join us</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">NETBALL IN ANTWERP</p>
+        <h1>Find your team.<br><span>Find your game.</span></h1>
+        <p class="hero-copy">A welcoming netball club bringing people together through sport, friendship and fun.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#join">TRY A SESSION</a>
+          <a class="btn btn-light" href="#training">SEE TRAINING TIMES</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="free-banner">
+      <div>
+        <p class="eyebrow">NEW TO NETBALL?</p>
+        <h2>Your first session is free!</h2>
+        <p>No experience needed. Come along, meet the team and give netball a try.</p>
+      </div>
+      <a class="btn btn-white" href="#join">JOIN US</a>
+    </section>
+
+    <section id="about" class="section intro">
+      <div class="section-heading">
+        <p class="eyebrow">WELCOME</p>
+        <h2>Netball for everyone.</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="intro-grid">
+        <div>
+          <p class="lead">Antwerp Netball Club is a social and empowering club for people who want to play netball, get active and meet new people.</p>
+          <p>Whether you are completely new to netball or already have experience, you are welcome. We are building a friendly community where everyone can learn, play and enjoy the game.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3>Welcoming</h3>
+          <p>Come as you are. We support beginners and experienced players.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3>Social</h3>
+          <p>More than training — it is about building friendships and community.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3>Active</h3>
+          <p>Learn the game, improve your skills and have fun while staying active.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="training" class="section dark">
+      <div class="section-heading centered">
+        <p class="eyebrow">COME PLAY</p>
+        <h2>Training times</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="training-grid">
+        <article class="training-card">
+          <p class="day">FRIDAY</p>
+          <h3>18:30 – 20:30</h3>
+          <p>Training & skills</p>
+          <span>Antwerp</span>
+        </article>
+        <article class="training-card">
+          <p class="day">SUNDAY</p>
+          <h3>10:00 – 12:00</h3>
+          <p>Training & game play</p>
+          <span>Antwerp</span>
+        </article>
+      </div>
+      <p class="training-note">Training locations can change. Check with the club before your first session.</p>
+    </section>
+
+    <section id="join" class="section join">
+      <div class="join-copy">
+        <p class="eyebrow">READY TO PLAY?</p>
+        <h2>Come and try netball.</h2>
+        <div class="red-line"></div>
+        <p class="lead">Your first three sessions are free.</p>
+        <p>You do not need previous netball experience or special equipment. Bring comfortable sports clothes, indoor sports shoes and a water bottle.</p>
+      </div>
+      <form class="join-form" onsubmit="submitForm(event)">
+        <h3>Register your interest</h3>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Experience
+          <select name="experience">
+            <option>New to netball</option>
+            <option>Some experience</option>
+            <option>Experienced player</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" rows="4" placeholder="Tell us anything you'd like us to know"></textarea></label>
+        <button class="btn btn-primary" type="submit">SEND REQUEST</button>
+        <p class="form-note" id="form-note">This demo form is ready to connect to your preferred email/form service.</p>
+      </form>
+    </section>
+
+    <section id="events" class="section events">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT'S ON</p>
+        <h2>Club life</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="event-grid">
+        <article class="event-card">
+          <span class="event-tag">TRAINING</span>
+          <h3>Weekly sessions</h3>
+          <p>Regular training, skills and match play for our community.</p>
+        </article>
+        <article class="event-card">
+          <span class="event-tag">TOURNAMENTS</span>
+          <h3>Play & compete</h3>
+          <p>Take part in friendly tournaments and meet other netball clubs.</p>
+        </article>
+        <article class="event-card">
+          <span class="event-tag">SOCIAL</span>
+          <h3>More than sport</h3>
+          <p>Club socials and community activities throughout the season.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">ANTWERP NETBALL CLUB</p>
+      <h2>Bring your energy.<br>We'll bring the netball.</h2>
+      <a class="btn btn-white" href="#join">JOIN THE CLUB</a>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-main">ANTWERP</span>
+        <span class="brand-sub">NETBALL CLUB</span>
+      </a>
+      <p>A growing netball community in Antwerp.</p>
+    </div>
+    <div class="footer-links">
+      <h4>GET IN TOUCH</h4>
+      <a href="mailto:info@antwerpnetballclub.be">info@antwerpnetballclub.be</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+    <div class="footer-links">
+      <h4>QUICK LINKS</h4>
+      <a href="#about">About</a>
+      <a href="#training">Training</a>
+      <a href="#join">Join us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
