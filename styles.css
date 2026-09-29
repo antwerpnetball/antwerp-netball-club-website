@@ -106,3 +106,61 @@
 .court-image-wrap{background:#fff;border-radius:10px;overflow:hidden}
 .court-image-wrap img{background:#fff}
 @media(max-width:850px){.world-story{grid-template-columns:1fr}.world-map-card{margin-top:8px}.world-map .map-labels text{font-size:12px}}
+
+
+/* V17 mobile responsive refinements */
+@media(max-width:600px){
+  .site-header{min-height:72px;padding:6px 16px;}
+  .club-logo{width:46px;height:46px;}
+  .brand{gap:7px;}
+  .brand-main{font-size:18px;letter-spacing:-1px;}
+  .brand-sub{font-size:9px;letter-spacing:.7px;}
+  .header-right{gap:7px;}
+  .language-switch{font-size:11px;gap:3px;}
+  .menu-toggle{font-size:28px;padding:2px 0;}
+  .nav{top:72px;padding:14px 18px;}
+
+  .hero{min-height:0;padding:34px 20px 28px;display:block;background-position:58% center;}
+  .hero-content{max-width:none;}
+  .hero-logo-wrap{margin-bottom:12px;}
+  .hero-logo{width:58px;height:58px;padding:4px;}
+  .hero .eyebrow{font-size:10px;letter-spacing:1.5px;margin-bottom:8px;}
+  h1{font-size:clamp(42px,12vw,58px);line-height:1.02;letter-spacing:-2px;margin-bottom:18px;}
+  .hero-copy{font-size:16px;line-height:1.5;max-width:100%;margin-bottom:22px;}
+  .hero-actions{gap:10px;}
+  .hero-actions .btn{padding:12px 17px;font-size:12px;line-height:1.2;}
+  .hero-badge{position:relative;right:auto;bottom:auto;width:100%;max-width:390px;margin:30px 0 0;padding:14px 15px;gap:4px 12px;font-size:10px;}
+  .hero-badge strong{font-size:14px;}
+
+  .welcome-strip div{padding:18px 20px;}
+  .welcome-strip strong{font-size:11px;}
+  .welcome-strip span{font-size:11px;}
+
+  .section{padding:56px 20px;}
+  .section-heading h2{font-size:clamp(32px,9vw,44px);letter-spacing:-1.5px;}
+  .lead{font-size:18px;}
+
+  .about-layout,.join-intro-grid,.games-layout,.training-grid,.pricing,.footer{grid-template-columns:1fr;}
+  .feature-grid,.dates-grid{grid-template-columns:1fr;}
+  .training-card{padding:26px;}
+  .training-card h3{font-size:30px;}
+  .venue-card,.venue-info>div{padding:25px;}
+  .contact-box{padding:30px 20px;}
+
+  .discover-story{padding:20px;}
+  .compare-grid,.history-timeline{grid-template-columns:1fr;}
+  .world-story{grid-template-columns:1fr;}
+  .netball-facts{grid-template-columns:1fr;}
+  .positions-explorer{padding:16px;}
+  .position-detail{padding:16px;grid-template-columns:44px 1fr;gap:12px;}
+  .position-area{grid-column:1/-1;}
+  .position-title-row h3{font-size:17px;}
+  .position-tabs{justify-content:flex-start;}
+
+  .court-explainer{margin-left:0;margin-right:0;padding:20px;grid-template-columns:1fr;}
+  .rules-link-wrap{margin-left:0;margin-right:0;padding:18px;}
+  .ttc-block,.friendly-block{padding:22px;}
+  .friendly-match{display:block;}
+  .friendly-match span{margin-top:4px;}
+  .social-icons{margin-top:20px;}
+}
