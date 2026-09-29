@@ -10,169 +10,431 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Antwerp Netball Club home">
-      <span class="brand-main">ANTWERP</span>
-      <span class="brand-sub">NETBALL CLUB</span>
+      <img class="club-logo" src="images/club-logo.jpeg" alt="Antwerp Netball Club logo">
+      <span class="brand-copy"><span class="brand-main">ANTWERP</span><span class="brand-sub">NETBALL CLUB</span></span>
     </a>
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#training">Training</a>
-      <a href="#join">Join us</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+    <div class="header-right">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <div class="nav-dropdown">
+          <button class="nav-drop-btn" type="button"><span data-i18n="navAbout">About Us</span> <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#about" data-i18n="navAboutClub">Antwerp Netball Club</a>
+            <a href="#discover" data-i18n="navDiscover">Discover Netball</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-drop-btn" type="button"><span data-i18n="navJoin">Join Us</span> <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#training" data-i18n="navTrainingTimes">Training Times</a>
+            <a href="#membership" data-i18n="navMembership">Membership</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-drop-btn" type="button"><span data-i18n="navCompetitions">Competitions</span> <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="#games" data-i18n="navGames">Games & Tournaments</a>
+            <a href="#ttc" data-i18n="navTtc">TTC 2026/27</a>
+          </div>
+        </div>
+
+        <a href="#contact" data-i18n="navContact">Contact Us</a>
+      </nav>
+
+      <div class="language-switch" aria-label="Language">
+        <button class="lang-btn active" data-lang="en">EN</button><span>|</span><button class="lang-btn" data-lang="nl">NL</button>
+      </div>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
   </header>
 
   <main id="home">
     <section class="hero">
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <p class="eyebrow">NETBALL IN ANTWERP</p>
-        <h1>Find your team.<br><span>Find your game.</span></h1>
-        <p class="hero-copy">A welcoming netball club bringing people together through sport, friendship and fun.</p>
+        <div class="hero-logo-wrap"><img src="images/club-logo.jpeg" alt="Antwerp Netball Club logo" class="hero-logo"></div>
+        <p class="eyebrow" data-i18n="heroEyebrow">NETBALL IN ANTWERP</p>
+        <h1 data-i18n="heroTitle">Find your team.<br><span>Find your game.</span></h1>
+        <p class="hero-copy" data-i18n="heroCopy">A welcoming netball club bringing people together through sport, friendship and fun.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#join">TRY A SESSION</a>
-          <a class="btn btn-light" href="#training">SEE TRAINING TIMES</a>
+          <a class="btn btn-primary" href="#join" data-i18n="heroButton1">JOIN US</a>
+          <a class="btn btn-light" href="#training" data-i18n="heroButton2">SEE TRAINING TIMES</a>
         </div>
+      </div>
+      <div class="hero-badge">
+        <span data-i18n="heroBadgeTop">FRIDAYS</span><strong>18:30–20:30</strong>
+        <span data-i18n="heroBadgeBottom">EVERY OTHER SUNDAY</span><strong>10:00–12:00</strong>
       </div>
     </section>
 
-    <section class="free-banner">
-      <div>
-        <p class="eyebrow">NEW TO NETBALL?</p>
-        <h2>Your first session is free!</h2>
-        <p>No experience needed. Come along, meet the team and give netball a try.</p>
-      </div>
-      <a class="btn btn-white" href="#join">JOIN US</a>
+    <section class="welcome-strip">
+      <div><strong data-i18n="welcomeOne">ALL LEVELS WELCOME</strong><span data-i18n="welcomeOneText">Beginners and experienced players</span></div>
+      <div><strong data-i18n="welcomeTwo">FIRST SESSION FREE</strong><span data-i18n="welcomeTwoText">Come and give netball a try</span></div>
+      <div><strong data-i18n="welcomeThree">RECOGNISED CLUB</strong><span data-i18n="welcomeThreeText">Sporting A · 2026–2028</span></div>
     </section>
 
     <section id="about" class="section intro">
       <div class="section-heading">
-        <p class="eyebrow">WELCOME</p>
-        <h2>Netball for everyone.</h2>
+        <p class="eyebrow" data-i18n="aboutEyebrow">WELCOME</p>
+        <h2 data-i18n="aboutTitle">Netball for everyone.</h2>
         <div class="red-line"></div>
       </div>
-      <div class="intro-grid">
+      <div class="about-layout">
         <div>
-          <p class="lead">Antwerp Netball Club is a social and empowering club for people who want to play netball, get active and meet new people.</p>
-          <p>Whether you are completely new to netball or already have experience, you are welcome. We are building a friendly community where everyone can learn, play and enjoy the game.</p>
+          <p class="lead" data-i18n="aboutLead">Antwerp Netball Club is a mixed-gender 18+ club bringing together players of all levels, nationalities and fitness levels to enjoy the game, get active and meet new people.</p>
+          <p data-i18n="aboutText">Whether you are completely new to netball or already have experience, you are welcome. We are building a friendly community where everyone can learn, play and enjoy the game.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-number">01</div>
-          <h3>Welcoming</h3>
-          <p>Come as you are. We support beginners and experienced players.</p>
+        <div class="about-photo"><img src="images/team.jpg" alt="Antwerp Netball Club team"></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="feature-number">01</div><h3 data-i18n="welcomingTitle">Welcoming</h3><p data-i18n="welcomingText">Come as you are. We support beginners and experienced players.</p></div>
+        <div class="feature-card"><div class="feature-number">02</div><h3 data-i18n="socialTitle">Social</h3><p data-i18n="socialText">More than training — it is about building friendships and community.</p></div>
+        <div class="feature-card"><div class="feature-number">03</div><h3 data-i18n="activeTitle">Active</h3><p data-i18n="activeText">Learn the game, improve your skills and have fun while staying active.</p></div>
+      </div>
+    </section>
+
+
+    <section id="discover" class="section netball-primer discover-page">
+      <div class="discover-hero">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="primerEyebrow">DISCOVER NETBALL</p>
+          <h2 data-i18n="primerTitle">What is netball?</h2>
+          <div class="red-line"></div>
+          <p class="primer-intro" data-i18n="primerIntro">Netball is a fast-paced ball sport played between two teams of seven players on court. Teams work to keep or regain possession, move the ball into the goal circle and score as many goals as possible.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-number">02</div>
-          <h3>Social</h3>
-          <p>More than training — it is about building friendships and community.</p>
+      </div>
+
+      <div class="netball-facts">
+        <article><div class="fact-icon">⏱</div><h3 data-i18n="fact1Title">3-second passing</h3><p data-i18n="fact1Text">Once you receive the ball, you have three seconds to pass or shoot. Quick decisions keep the game moving.</p><strong data-i18n="fact1Tag">FAST TEAMWORK</strong></article>
+        <article><div class="fact-icon">◯</div><h3 data-i18n="fact2Title">Strict non-contact</h3><p data-i18n="fact2Text">Players defend without physical contact, so timing, footwork and anticipation are essential.</p><strong data-i18n="fact2Tag">SMART DEFENCE</strong></article>
+        <article><div class="fact-icon">▦</div><h3 data-i18n="fact3Title">Dedicated court areas</h3><p data-i18n="fact3Text">Each position can move only in specific thirds of the court, giving every role a clear tactical job.</p><strong data-i18n="fact3Tag">TACTICAL ROLES</strong></article>
+        <article><div class="fact-icon">⚑</div><h3 data-i18n="fact4Title">Precision scoring</h3><p data-i18n="fact4Text">Only the Goal Shooter and Goal Attack can score, making shooting accuracy and smart movement crucial.</p><strong data-i18n="fact4Tag">SCORING EXCITEMENT</strong></article>
+      </div>
+
+      <div class="discover-story comparison-story">
+        <div class="story-copy">
+          <p class="eyebrow" data-i18n="compareEyebrow">NEW TO NETBALL?</p>
+          <h3 data-i18n="compareTitle">Think korfbal meets basketball</h3>
+          <p data-i18n="compareIntro">If you know korfbal or basketball, you already have a good starting point for understanding netball.</p>
         </div>
-        <div class="feature-card">
-          <div class="feature-number">03</div>
-          <h3>Active</h3>
-          <p>Learn the game, improve your skills and have fun while staying active.</p>
+        <div class="compare-grid">
+          <div class="compare-card"><span class="compare-label" data-i18n="compareKorfbalTitle">Like korfbal</span><p data-i18n="compareKorfbalText">Passing, movement, teamwork and specific court areas.</p></div>
+          <div class="compare-card"><span class="compare-label" data-i18n="compareBasketTitle">Like basketball</span><p data-i18n="compareBasketText">A raised goal, scoring, attack and defence.</p></div>
+          <div class="compare-card compare-card-accent"><span class="compare-label" data-i18n="compareNetballTitle">But netball is different</span><p data-i18n="compareNetballText">No dribbling, a three-second rule, seven positions and strict movement areas.</p></div>
         </div>
+      </div>
+
+      <div class="discover-story history-story">
+        <div class="story-heading">
+          <p class="eyebrow" data-i18n="historyEyebrow">A SHORT STORY</p>
+          <h3 data-i18n="historyTitle">How netball grew</h3>
+          <p data-i18n="historyIntro">Netball developed from early forms of women's basketball in the late 19th century. As the game evolved, it developed its own rules, positions and style of play.</p>
+        </div>
+        <div class="history-timeline">
+          <div><span>1890s</span><p data-i18n="history1">Early forms of women's basketball develop in England.</p></div>
+          <div><span data-i18n="history2Label">NETBALL TAKES SHAPE</span><p data-i18n="history2">The sport develops its own rules and positions.</p></div>
+          <div><span data-i18n="history3Label">THE GAME SPREADS</span><p data-i18n="history3">Netball becomes established in countries around the world.</p></div>
+          <div><span data-i18n="history4Label">TODAY</span><p data-i18n="history4">The international game continues to grow, including across Europe.</p></div>
+        </div>
+      </div>
+
+      <div class="discover-story world-story">
+        <div class="world-copy">
+          <p class="eyebrow" data-i18n="globalEyebrow">NETBALL AROUND THE WORLD</p>
+          <h3 data-i18n="globalTitle">A global game, still growing</h3>
+          <p data-i18n="globalText1">Netball has strong communities in countries including Australia, New Zealand, England, Jamaica, South Africa, Uganda, Malawi, Singapore, Scotland and Wales, among many others.</p>
+          <p data-i18n="globalText2">The sport is also growing across Europe, including in the Netherlands, France and Germany.</p>
+          <p data-i18n="globalText3">In Belgium, netball is still relatively new — and Antwerp Netball Club is helping introduce the game and build a local netball community in Antwerp.</p>
+        </div>
+        <div class="world-map-card">
+          <svg class="world-map" viewBox="0 0 720 390" role="img" aria-label="World map showing countries where netball is played" data-i18n-aria="worldMapAria">
+            <path class="continent" d="M83 118l37-23 54 5 32 25-7 25-31 9-18 30-28 6-20-22-35-6-14-20z"/>
+            <path class="continent" d="M212 200l38-7 29 18 13 34-13 29-29-7-21-25-22-14z"/>
+            <path class="continent" d="M351 108l35-14 48 12 20 24-12 25-39 4-29-14-27 5-18-16z"/>
+            <path class="continent" d="M385 159l49 12 23 42-12 53-30 38-23-14-11-38-24-20 11-30-8-26z"/>
+            <path class="continent" d="M467 116l64-16 69 13 54 34 8 29-39 7-22 23-42-3-30-17-35 7-21-28z"/>
+            <path class="continent" d="M556 207l42-5 37 23 17 31-22 25-46-5-27-20-18-25z"/>
+            <path class="continent" d="M627 301l28 8 17 19-18 18-30-6-12-17z"/>
+            <path class="continent" d="M615 113l26 4 21 17-6 17-27-2-16-14z"/>
+            <g class="map-marker">
+              <circle cx="139" cy="139" r="7"/><circle cx="294" cy="235" r="7"/><circle cx="430" cy="127" r="7"/><circle cx="432" cy="185" r="7"/><circle cx="499" cy="151" r="7"/><circle cx="529" cy="176" r="7"/><circle cx="563" cy="205" r="7"/><circle cx="596" cy="233" r="7"/><circle cx="648" cy="326" r="7"/><circle cx="582" cy="123" r="7"/><circle cx="650" cy="124" r="7"/><circle cx="677" cy="132" r="7"/>
+            </g>
+            <g class="map-labels">
+              <text x="127" y="161" data-i18n="mapAustralia">Australia</text>
+              <text x="273" y="258" data-i18n="mapJamaica">Jamaica</text>
+              <text x="407" y="106" data-i18n="mapEurope">Europe</text>
+              <text x="485" y="142" data-i18n="mapAfrica">Africa</text>
+              <text x="612" y="350" data-i18n="mapNewZealand">New Zealand</text>
+            </g>
+          </svg>
+          <div class="map-note" data-i18n="mapNote">Selected netball communities • Europe is continuing to grow</div>
+        </div>
+      </div>
+
+      <div class="court-explainer">
+        <div class="court-copy">
+          <p class="eyebrow" data-i18n="courtEyebrow">THE NETBALL COURT</p>
+          <h3 data-i18n="courtTitle">Where the game happens</h3>
+          <p data-i18n="courtText">The court is divided into three thirds, with a goal circle at each end. Each position has specific areas of the court where it can move.</p>
+        </div>
+        <div class="court-image-wrap">
+          <img id="courtDiagram" src="images/court-diagram.svg" data-i18n-src="courtDiagramSrc" alt="Netball court showing the three thirds, goal circles and player positions" data-i18n-alt="courtDiagramAlt">
+        </div>
+      </div>
+
+      <div class="positions-explorer">
+        <div class="positions-header">
+          <div>
+            <p class="eyebrow" data-i18n="positionsEyebrow">EXPLORE THE 7 COURT POSITIONS</p>
+            <p data-i18n="positionsHint">Click any position to explore its role and key strengths.</p>
+          </div>
+          <div class="position-tabs" role="tablist" aria-label="Netball positions" data-i18n-aria="positionsAria">
+            <button class="position-tab active" data-position="GS">GS</button>
+            <button class="position-tab" data-position="GA">GA</button>
+            <button class="position-tab" data-position="WA">WA</button>
+            <button class="position-tab" data-position="C">C</button>
+            <button class="position-tab" data-position="WD">WD</button>
+            <button class="position-tab" data-position="GD">GD</button>
+            <button class="position-tab" data-position="GK">GK</button>
+          </div>
+        </div>
+
+        <div class="position-detail" aria-live="polite">
+          <div class="position-badge" id="position-badge">GS</div>
+          <div class="position-copy">
+            <div class="position-title-row">
+              <h3 id="position-name">Goal Shooter</h3>
+              <span id="position-side">ATTACK</span>
+            </div>
+            <p id="position-role">The main scorer. The GS stays in the attacking circle and turns good team movement into goals.</p>
+            <div class="strengths">
+              <strong data-i18n="strengthsLabel">KEY STRENGTHS</strong>
+              <div id="position-strengths" class="strength-pills"><span>Accuracy</span><span>Composure</span><span>Rebounding</span></div>
+            </div>
+          </div>
+          <div class="position-area">
+            <span data-i18n="courtAreaLabel">COURT AREA</span>
+            <strong id="position-area-text">Attacking goal third & goal circle</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="rules-link-wrap">
+        <p class="rules-question" data-i18n="rulesQuestion">Want to learn the full rules?</p>
+        <a class="rules-link" href="https://netball.sport/game/the-rules-of-netball/" target="_blank" rel="noopener noreferrer" data-i18n="rulesLink">View the Official World Netball Rules →</a>
+      </div>
+    </section>
+
+    <section class="recognition">
+      <div class="recognition-inner"><img src="images/sporting-a-recognised.png" alt="Recognised by Sporting A 2026 - 2028"></div>
+    </section>
+
+    <section id="join" class="section join-intro">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="joinEyebrow">READY TO PLAY?</p>
+        <h2 data-i18n="joinTitle">Join the club.</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="join-intro-grid">
+        <div>
+          <p class="lead" data-i18n="joinLead">Your first session is free. No previous netball experience is needed.</p>
+          <p data-i18n="joinText">Bring comfortable sports clothes, indoor sports shoes and a water bottle. Come along, meet the team and see if netball is for you.</p>
+        </div>
+        <a class="btn btn-primary large-btn" href="#membership" data-i18n="membershipButton">SEE MEMBERSHIP OPTIONS</a>
       </div>
     </section>
 
     <section id="training" class="section dark">
       <div class="section-heading centered">
-        <p class="eyebrow">COME PLAY</p>
-        <h2>Training times</h2>
+        <p class="eyebrow" data-i18n="trainingEyebrow">COME PLAY</p>
+        <h2 data-i18n="trainingTitle">Training Times</h2>
         <div class="red-line"></div>
       </div>
       <div class="training-grid">
         <article class="training-card">
-          <p class="day">FRIDAY</p>
+          <p class="day" data-i18n="friday">FRIDAY</p>
           <h3>18:30 – 20:30</h3>
-          <p>Training & skills</p>
-          <span>Antwerp</span>
+          <p data-i18n="fridayText">Training & skills</p>
+          <span data-i18n="locationAntwerp">Antwerp · KdG Campus Zuid</span>
         </article>
         <article class="training-card">
-          <p class="day">SUNDAY</p>
+          <p class="day" data-i18n="sunday">SUNDAY</p>
           <h3>10:00 – 12:00</h3>
-          <p>Training & game play</p>
-          <span>Antwerp</span>
+          <p data-i18n="sundayText">Training & game play — every other Sunday</p>
+          <span data-i18n="locationAntwerp">Antwerp · KdG Campus Zuid</span>
         </article>
       </div>
-      <p class="training-note">Training locations can change. Check with the club before your first session.</p>
-    </section>
+      <div class="training-photo"><img src="images/image2-netball.jpg" alt="Antwerp Netball Club players training together"></div>
 
-    <section id="join" class="section join">
-      <div class="join-copy">
-        <p class="eyebrow">READY TO PLAY?</p>
-        <h2>Come and try netball.</h2>
-        <div class="red-line"></div>
-        <p class="lead">Your first three sessions are free.</p>
-        <p>You do not need previous netball experience or special equipment. Bring comfortable sports clothes, indoor sports shoes and a water bottle.</p>
+      <div class="venue-section">
+        <div class="venue-card">
+          <p class="eyebrow" data-i18n="venueEyebrow">HOME VENUE</p>
+          <h3 data-i18n="venueTitle">KdG Campus Zuid</h3>
+          <p data-i18n="venueAddress">Brusselstraat 45<br>2018 Antwerpen</p>
+          <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=KdG+Campus+Zuid%2C+Brusselstraat+45%2C+2018+Antwerpen" target="_blank" rel="noopener" data-i18n="directions">GET DIRECTIONS</a>
+        </div>
+        <div class="venue-info">
+          <div><strong data-i18n="publicTransportTitle">Public transport</strong><p data-i18n="publicTransportText">Easy to reach by public transport in Antwerp.</p></div>
+          <div><strong data-i18n="facilitiesTitle">Facilities</strong><p data-i18n="facilitiesText">Sports hall facilities available at KdG Campus Zuid.</p></div>
+        </div>
       </div>
-      <form class="join-form" onsubmit="submitForm(event)">
-        <h3>Register your interest</h3>
-        <label>Name<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Experience
-          <select name="experience">
-            <option>New to netball</option>
-            <option>Some experience</option>
-            <option>Experienced player</option>
-          </select>
-        </label>
-        <label>Message<textarea name="message" rows="4" placeholder="Tell us anything you'd like us to know"></textarea></label>
-        <button class="btn btn-primary" type="submit">SEND REQUEST</button>
-        <p class="form-note" id="form-note">This demo form is ready to connect to your preferred email/form service.</p>
-      </form>
     </section>
 
-    <section id="events" class="section events">
+    <section id="membership" class="section membership">
       <div class="section-heading">
-        <p class="eyebrow">WHAT'S ON</p>
-        <h2>Club life</h2>
+        <p class="eyebrow" data-i18n="membershipEyebrow">JOIN US</p>
+        <h2 data-i18n="membershipTitle">Membership</h2>
         <div class="red-line"></div>
       </div>
-      <div class="event-grid">
-        <article class="event-card">
-          <span class="event-tag">TRAINING</span>
-          <h3>Weekly sessions</h3>
-          <p>Regular training, skills and match play for our community.</p>
-        </article>
-        <article class="event-card">
-          <span class="event-tag">TOURNAMENTS</span>
-          <h3>Play & compete</h3>
-          <p>Take part in friendly tournaments and meet other netball clubs.</p>
-        </article>
-        <article class="event-card">
-          <span class="event-tag">SOCIAL</span>
-          <h3>More than sport</h3>
-          <p>Club socials and community activities throughout the season.</p>
-        </article>
+      <div class="pricing">
+        <div class="pricing-card featured">
+          <span class="pricing-label" data-i18n="bestValue">BEST VALUE</span>
+          <h3 data-i18n="fullSeason">FULL SEASON</h3>
+          <div class="price">€220 <small data-i18n="perYear">/ YEAR</small></div>
+          <p data-i18n="seasonDates">September 2026 – June 2027</p>
+          <ul>
+            <li data-i18n="sessions">57 training sessions</li>
+            <li data-i18n="matches">7 scheduled matches</li>
+            <li data-i18n="registration">Netball registration</li>
+            <li data-i18n="insurance">Insurance</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <h3 data-i18n="flexible">FLEXIBLE OPTIONS</h3>
+          <div class="flex-price"><strong>€120</strong> <span data-i18n="semester">/ semester</span></div>
+          <p data-i18n="semesterDates">September 2026 – January 2027 OR February 2027 – June 2027</p>
+          <div class="flex-price"><strong>€25</strong> <span data-i18n="month">/ month</span></div>
+          <div class="flex-price"><strong>€8.50</strong> <span data-i18n="onceOff">/ one-off training</span></div>
+          <p class="free-first" data-i18n="freeFirst">FREE first session for newcomers</p>
+        </div>
+      </div>
+      <p class="pricing-note" data-i18n="tournamentNote">Tournament participation fees are not included and are charged separately.</p>
+      <div class="insurance-note"><strong data-i18n="insuranceTitle">INSURED THROUGH SPORTIEVAK</strong><p data-i18n="insuranceText">Members are insured against accidents during club activities through Sportievak.</p></div>
+    </section>
+
+    <section id="games" class="section games">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="gamesEyebrow">COMPETITIONS</p>
+        <h2 data-i18n="gamesTitle">Games & Tournaments</h2>
+        <div class="red-line"></div>
+      </div>
+      <div class="games-layout">
+        <div>
+          <p class="lead" data-i18n="gamesIntro">Antwerp Netball Club participates in friendly games throughout the season and in the Tri-Country Cup (TTC).</p>
+          <p data-i18n="ttcDescription">The TTC is a small league-style cup competition between clubs from Belgium, the Netherlands and Germany. It has 5 Cup Days, with each participating club hosting one Cup Day, followed by a Finals Day.</p>
+          <div class="club-list">
+            <span>Brussels</span><span>Antwerp</span><span>Maastricht</span><span>Cologne</span><span>BrabantxBreda</span>
+          </div>
+          <div class="friendly-block">
+            <h3 data-i18n="friendlyTitle">Friendly Matches</h3>
+            <div class="friendly-match"><strong>13 December 2026</strong><span data-i18n="friendlyBrussels">Brussels</span></div>
+          </div>
+        </div>
+        <div class="games-photo"><img src="images/image3-netball.jpg" alt="Antwerp Netball Club players during a team huddle"></div>
+      </div>
+
+      <div id="ttc" class="ttc-block">
+        <div class="ttc-heading">
+          <div><span class="ttc-label">TTC</span><h3 data-i18n="ttcTitle">TTC 2026/27 Key Dates</h3></div>
+        </div>
+        <div class="dates-grid">
+          <div><strong>18 October 2026</strong><span data-i18n="brusselsCup">Brussels Cup Day</span></div>
+          <div><strong>29 November 2026</strong><span data-i18n="antwerpCup">Antwerp Cup Day</span></div>
+          <div><strong>30 January 2027</strong><span data-i18n="maastrichtCup">Maastricht Cup Day</span></div>
+          <div><strong>11 April 2027</strong><span data-i18n="cologneCup">Cologne Cup Day</span></div>
+          <div><strong>23 May 2027</strong><span data-i18n="finalsDay">Finals Day, Maastricht</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="cta">
-      <p class="eyebrow">ANTWERP NETBALL CLUB</p>
-      <h2>Bring your energy.<br>We'll bring the netball.</h2>
-      <a class="btn btn-white" href="#join">JOIN THE CLUB</a>
+    <section id="contact" class="section contact">
+      <div class="contact-box">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">GET IN TOUCH</p>
+          <h2 data-i18n="contactTitle">Come play with us.</h2>
+          <p data-i18n="contactText">Have a question about training, membership or competitions? Get in touch with Antwerp Netball Club.</p>
+        </div>
+        <div class="social-icons" aria-label="Contact and social media">
+          <a class="social-icon" href="mailto:antwerpnetballclub@gmail.com" aria-label="Email Antwerp Netball Club" data-i18n-aria="emailAria">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm0 2v.3l9 6.1 9-6.1V7l-9 6.1L3 7z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.facebook.com/share/1Pcgn2eqbb/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Antwerp Netball Club on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V4.9c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V11H7.5v3h2.8v8h3.2z"/></svg>
+          </a>
+          <a class="social-icon" href="https://www.instagram.com/antwerpnetballclub?stkn=ZXdqYmRxbTdjN2Jo&utm_source=qr" target="_blank" rel="noopener" aria-label="Antwerp Netball Club on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="social-dot"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="join-form-box">
+        <div>
+          <p class="eyebrow" data-i18n="formEyebrow">READY TO JOIN?</p>
+          <h3 data-i18n="formTitle">Try netball for free.</h3>
+          <p data-i18n="formText">Fill in the form and we’ll get back to you with the next steps for your free first session.</p>
+          <p class="form-required-note" data-i18n="formRequiredNote">* Required fields</p>
+        </div>
+        <div class="join-form-frame">
+          <form id="tryNetballForm" class="club-join-form" action="https://script.google.com/macros/s/AKfycbx4KkDkuRSX__EckAODHGhE8-ug6_lgMduKbK5XTZa_SYpYOKSVtckHPguzmhy7BsIp/exec" method="POST" target="tryNetballSubmitFrame">
+            <div class="form-grid">
+              <label><span data-i18n="firstNameLabel">First Name / Voornaam</span><span class="required">*</span><input type="text" name="firstName" required autocomplete="given-name"></label>
+              <label><span data-i18n="lastNameLabel">Last Name / Achternaam</span><input type="text" name="lastName" autocomplete="family-name"></label>
+              <label><span data-i18n="emailLabel">Email Address / E-mailadres</span><span class="required">*</span><input type="email" name="email" required autocomplete="email"></label>
+              <label><span data-i18n="phoneLabel">Phone Number / Telefoonnummer</span><input type="tel" name="phone" autocomplete="tel"></label>
+            </div>
+
+            <fieldset>
+              <legend><span data-i18n="experienceLabel">Have you played netball before? / Heb je al netball gespeeld?</span></legend>
+              <label class="radio-option"><input type="radio" name="experience" value="Yes / Ja"><span data-i18n="experienceYes">Yes / Ja</span></label>
+              <label class="radio-option"><input type="radio" name="experience" value="No / Nee"><span data-i18n="experienceNo">No / Nee</span></label>
+              <label class="radio-option"><input type="radio" name="experience" value="A little / Een beetje"><span data-i18n="experienceLittle">A little / Een beetje</span></label>
+            </fieldset>
+
+            <fieldset>
+              <legend><span data-i18n="interestLabel">What are you looking for? / Wat zoek je?</span></legend>
+              <label class="radio-option"><input type="radio" name="interest" value="Recreational / social netball – Recreatief / sociaal netball"><span data-i18n="interestSocial">Recreational / social netball – Recreatief / sociaal netball</span></label>
+              <label class="radio-option"><input type="radio" name="interest" value="Competitive netball – Competitief netball"><span data-i18n="interestCompetitive">Competitive netball – Competitief netball</span></label>
+              <label class="radio-option"><input type="radio" name="interest" value="Just want to try netball – Ik wil gewoon netball proberen"><span data-i18n="interestTry">Just want to try netball – Ik wil gewoon netball proberen</span></label>
+            </fieldset>
+
+            <fieldset>
+              <legend data-i18n="sourceLabel">How did you hear about Antwerp Netball Club? / Hoe heb je Antwerp Netball Club gevonden?</legend>
+              <label class="radio-option"><input type="radio" name="source" value="Instagram"><span>Instagram</span></label>
+              <label class="radio-option"><input type="radio" name="source" value="Facebook"><span>Facebook</span></label>
+              <label class="radio-option"><input type="radio" name="source" value="Friend / Vriend"><span data-i18n="sourceFriend">Friend / Vriend</span></label>
+              <label class="radio-option"><input type="radio" name="source" value="Google / Website"><span data-i18n="sourceGoogle">Google / Website</span></label>
+              <label class="radio-option"><input type="radio" name="source" value="Other / Andere"><span data-i18n="sourceOther">Other / Andere</span></label>
+            </fieldset>
+
+            <label class="consent-option"><input type="checkbox" name="consent" value="Yes / Ja" required><span data-i18n="consentText">I agree that Antwerp Netball Club may use my contact details to contact me about the Try Netball Session and club activities. / Ik ga ermee akkoord dat Antwerp Netball Club mijn contactgegevens mag gebruiken om mij te contacteren over de Try Netball Session en clubactiviteiten.</span> <span class="required">*</span></label>
+
+            <button type="submit" class="btn btn-primary form-submit" data-i18n="formButton">SEND / VERSTUREN</button>
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <iframe name="tryNetballSubmitFrame" id="tryNetballSubmitFrame" class="hidden-submit-frame" title="Form submission"></iframe>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer id="contact" class="footer">
+  <footer class="footer">
     <div>
-      <a class="brand footer-brand" href="#home">
-        <span class="brand-main">ANTWERP</span>
-        <span class="brand-sub">NETBALL CLUB</span>
-      </a>
-      <p>A growing netball community in Antwerp.</p>
+      <a class="brand footer-brand" href="#home"><img class="club-logo footer-logo" src="images/club-logo.jpeg" alt="Antwerp Netball Club logo"><span class="brand-copy"><span class="brand-main">ANTWERP</span><span class="brand-sub">NETBALL CLUB</span></span></a>
+      <p data-i18n="footerText">A growing netball community in Antwerp.</p>
     </div>
     <div class="footer-links">
-      <h4>GET IN TOUCH</h4>
-      <a href="mailto:info@antwerpnetballclub.be">info@antwerpnetballclub.be</a>
-      <a href="#">Instagram</a>
-      <a href="#">Facebook</a>
+      <h4 data-i18n="getInTouch">GET IN TOUCH</h4>
+      <a href="mailto:antwerpnetballclub@gmail.com">antwerpnetballclub@gmail.com</a>
+      <a href="https://www.facebook.com/share/1Pcgn2eqbb/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/antwerpnetballclub?stkn=ZXdqYmRxbTdjN2Jo&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
     </div>
     <div class="footer-links">
-      <h4>QUICK LINKS</h4>
-      <a href="#about">About</a>
-      <a href="#training">Training</a>
-      <a href="#join">Join us</a>
+      <h4 data-i18n="quickLinks">QUICK LINKS</h4>
+      <a href="#about" data-i18n="navAbout">About Us</a>
+      <a href="#join" data-i18n="navJoin">Join Us</a>
+      <a href="#discover" data-i18n="navDiscover">Discover Netball</a><a href="#games" data-i18n="navCompetitions">Competitions</a>
     </div>
   </footer>
 
