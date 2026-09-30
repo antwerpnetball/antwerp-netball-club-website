@@ -190,7 +190,7 @@ function setLanguage(lang) {
   document.title = dictionary.pageTitle;
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.dataset.i18n;
-    if (dictionary[key] !== undefined) el.innerHTML = dictionary[key];
+    if (dictionary[key] !== undefined) el.innerHTML = key === "gamesTitle" ? dictionary[key].replace(/&/g, "<span class=\"heading-amp\">&amp;</span>") : dictionary[key];
   });
   document.querySelectorAll("[data-i18n-aria]").forEach(el => {
     const key = el.dataset.i18nAria;

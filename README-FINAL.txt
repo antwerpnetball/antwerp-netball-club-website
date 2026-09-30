@@ -1,4 +1,4 @@
-ANTWERP NETBALL CLUB — FINAL WEBSITE
+ANTWERP NETBALL CLUB — V18 GOLD THEME WEBSITE
 
 This is the complete bilingual website package for Antwerp Netball Club.
 
@@ -27,3 +27,10 @@ DEPLOYMENT
 4. If Netlify is paused because of credits, resume/upgrade the plan first, then push the final files.
 
 The Try Netball form uses the existing Google Apps Script Web App endpoint already configured in index.html.
+
+
+V18 VISUAL UPDATE
+- Preserves the V17 bilingual structure, content, form and mobile fixes.
+- Updates the visual palette to the club logo: gold, black, cream and white.
+- Adds an elegant serif display font for major headings while retaining Montserrat for body text.
+- No JavaScript functionality was changed.
